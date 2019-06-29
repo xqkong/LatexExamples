@@ -1,0 +1,141 @@
+\documentclass{NSF}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{wrapfig}  
+\usepackage{amsmath}
+\usepackage{accents}
+\usepackage{dsfont}
+\usepackage{amsbsy}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{color}
+\usepackage{epstopdf}
+\usepackage{amssymb}
+\usepackage{framed}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{amsthm}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{makecell}
+\usepackage{multirow}
+\PassOptionsToPackage{bookmarks={false}}{hyperref}
+\graphicspath{{figures/}}
+
+\begin{document}
+
+% A. Cover Sheet
+% A number of the boxes contained on the Cover Sheet are
+% electronically pre-filled as part of the FastLane login process
+% Complete the rest of your info there
+
+% B. Project Summary
+\title{NSF Proposal Template}
+\newsection{B}
+\input{sections/summary}
+
+% C. Table of Contents 
+% A Table of Contents is automatically generated for the proposal by FastLane
+
+% D. Project Description
+\newpage\newsection{D}
+\input{sections/description}
+
+% E. References Cited
+\newpage\newsection{E}
+\renewcommand\refname{References Cited}
+\bibliography{references}
+% I prefer to use the IEEE bibliography style. 
+% That's  NOT required by the NSF guidelines. 
+% Feel Free to use whatever style you prefer
+\bibliographystyle{IEEEtran}
+
+% F. Biographical Sketch(es)
+\newpage\newsection{F}
+\input{sections/bio}
+
+% G. Budget Justification
+\newpage\newsection{G}
+\input{sections/budget}
+
+%  H. Current and Pending Support
+\newpage\newsection{H}
+\input{sections/support}
+
+% I. Facilities, Equipment and Other Resources
+\newpage\newsection{I}
+\input{sections/resources}
+
+% J. Special Information and Supplementary Documentation
+\newpage\newsection{J}
+\input{sections/data}		% Data Management Plan (Required)
+%\input{sections/postdoc} % Postdoctoral Researcher Mentoring Plan (if applicable)
+
+
+
+\subsection{Plan of Work}
+\begin{wraptable}{r}{4.25in}\renewcommand{\arraystretch}{0.7} %%{r}{xxin}, the xxin moves the table left or right  %% \arraystretch changes table's height
+	\renewcommand\theadset{\def\arraystretch{0.85}}%
+	\renewcommand\theadgape{}
+	%    \ttabbox
+	\vspace{-0.3in}
+	{\footnotesize
+		\begin{tabular}{!{\vrule width1.2pt}p{0.5in}|p{2.5in}|p{.005in}|p{.005in}|p{.005in}|p{.003in}|p{.005in}!{\vrule width1.2pt}}     %% \vrule changes the width of line  %%p{2.0in} change the "Serving synchronized traffic" width
+			\Xhline{1.2pt}  %% using this command to make line wide
+			\multicolumn{2}{!{\vrule width 1.2pt}c|}{\multirow{2}{1.3in}{\textbf{Proposed Activities}}}
+			& \multicolumn{5}{c!{\vrule width1.2pt}}{\textbf{Year}}
+			\\ \cline{3-7}
+			\multicolumn{2}{!{\vrule width1.2pt}c|}{}
+			&\multirow{1}{0.08in}{1}&\multirow{1}{0.08in}{2}&\multirow{1}{0.08in}{3}&\multirow{1}{0.08in}{4}&\multirow{1}{0.08in}{5}
+			\\ \hline
+			& \multirow{2}{1.8in}{Serving concurrent traffic}
+			& & & & &
+			\\ \Xcline{3-5}{2pt}
+			& & & & & &
+			\\ \cline{2-7}
+			\multirow{2}{0.5in}{\textbf{Research}}
+			& \multirow{2}{2.5in}{Offloading compute-intensive tasks}
+			& & & & &
+			\\ \Xcline{4-6}{2pt} 
+			& & & & & &
+			\\ \cline{2-7} 
+			& \multirow{2}{2.7in}{Leveraging predictable human behaviors}
+			& & & & &
+			\\ \Xcline{5-7}{2pt}
+			& & & & & &
+			\\ \cline{2-7}%\\ \hline   % THE FOLLOING TWO "\multicolumn" should be treated same time
+			& \multirow{2}{2.7in}{System Implementations}%\multicolumn{2}{!{\vrule width1.2pt}c|}{\multirow{2}{1.5in}{System Implementations}}
+			& & & & & 
+			\\ \Xcline{3-7}{2pt}
+			%\multicolumn{2}{!{\vrule width1.2pt}c|}{}
+			& & & & & &
+			\\ \hline
+			&\multirow{2}{1.7in}{Immerse-a-thon program}
+			& & & & &
+			\\ \Xcline{3-7}{2pt}
+			\multirow{2}{0.5in}{\textbf{Outreach}}
+			&  & & & & &
+			\\ \cline{2-7} 
+			& \multirow{2}{2.7in}{Immersive and interactive education program}
+			& & & & &
+			\\ \Xcline{3-7}{2pt}
+			& &  & & & &
+			\\ \Xhline{1.2pt}
+		\end{tabular}\hspace{-1.5in}
+		
+	}
+	\vspace{-.15in}
+	\caption{\small{The CAREER Project Timeline.}}\hspace{-2.5in}
+\end{wraptable}
+This project requires interdisciplinary
+research effort spanning optimization,
+queueing theory, control
+theory, algorithm design, and system
+implementation. The research and
+education activities of this CAREER
+project is organized in Table 2.\\
+\end{document}
